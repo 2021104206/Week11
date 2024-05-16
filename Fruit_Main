@@ -1,0 +1,16 @@
+#include <iostream>
+#include "fruit.h"
+using namespace std;
+int main() {
+	fruit apple, pear, peach, mango;
+	pear = fruit(300, 5,2);
+	peach = fruit(1000, 5,5);
+	mango = fruit(700, 8, 3);
+	cout << "Default value of price:  " << apple.price << "\nDefault value of number: " << apple.many << "\nDefault value of day: " << apple.day << endl;
+	cout << "Total price of apple: " << apple.show() << endl;
+	cout << "Total price of pear: " << pear.show() << endl;
+	cout << "Total price of peach: " << peach.show() << endl;
+	cout << "Price of the peach: " << peach.price << endl;
+	cout << "Price of mango: " << mango.price << "\nNumber of mango: " << mango.many << "\nDay of mango: " << mango.day << endl;
+	return 123;
+}
