@@ -1,0 +1,18 @@
+#include <iostream>
+#include "store2.h"
+using namespace std;
+int main() {
+	store A, B;
+	B = store(3, 4, 5, 100, 200, 300);
+	cout << A.total() << " Won" << endl;
+	cout << A.total(1000) << " Dollar" << endl;
+	cout << B.total() << endl;
+	cout << "A store peach price: " << A.peach.price << endl;
+	cout << "Size of class A: " << sizeof(A) << endl;
+	store C;
+	C = store(3, 4, 5, 100, 200, 300);
+	cout << C.apple.many << endl;
+	C *= 100;
+	cout << C.apple.many << endl;
+	return 123;
+}
